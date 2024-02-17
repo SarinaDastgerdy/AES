@@ -19,9 +19,13 @@ To encrypt or decrypt a file using this project, use the following command forma
 - `in=<input_file>`: Input file to be encrypted or decrypted.
 - `out=<output_file>`: Output file to store the encrypted or decrypted result.
 
-### CMD Interface
+### Compilation and Usage
 
-![image](https://github.com/SarinaDastgerdy/AES/assets/82812540/3c355f1a-3596-4875-aaf0-4047f3a2cebc)
+To compile the code, use the following command:
+g++ -o out aes_encryption.cpp -lssl -lcrypto
+Once the code has been compiled, you can run the executable with the following command:
+./out key.txt iv.txt aad.txt ecb input.txt output.txt
+Replace key.txt, iv.txt, aad.txt, input.txt, and output.txt with the actual filenames and parameters you intend to use.
 
 
 ### File Formats
