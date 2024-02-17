@@ -18,6 +18,8 @@ To encrypt or decrypt a file using this project, use the following command forma
 - `<mode>`: Encryption mode (`ecb`, `cbc`, or `gcm`).
 - `in=<input_file>`: Input file to be encrypted or decrypted.
 - `out=<output_file>`: Output file to store the encrypted or decrypted result.
+![image](https://github.com/SarinaDastgerdy/AES/assets/82812540/3c355f1a-3596-4875-aaf0-4047f3a2cebc)
+
 
 ### File Formats
 
@@ -29,4 +31,5 @@ To encrypt or decrypt a file using this project, use the following command forma
 ### Resources
 
 - [OpenSSL Documentation](https://wiki.openssl.org/index.php/EVP_Symmetric_Encryption_and_Decryption#Padding): Learn more about EVP Symmetric Encryption and Decryption with OpenSSL.
+- [OpenSSL Documentation](https://wiki.openssl.org/index.php/EVP_Authenticated_Encryption_and_Decryption#Authenticated_Encryption_using_GCM_mode): Learn more about EVP Authenticated Encryption and Decryption with OpenSSL.
 
