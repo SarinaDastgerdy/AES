@@ -19,7 +19,7 @@ To encrypt or decrypt a file using this project, use the following command forma
 - `in=<input_file>`: Input file to be encrypted or decrypted.
 - `out=<output_file>`: Output file to store the encrypted or decrypted result.
 
-## CMD Interface
+### CMD Interface
 
 ![image](https://github.com/SarinaDastgerdy/AES/assets/82812540/3c355f1a-3596-4875-aaf0-4047f3a2cebc)
 
