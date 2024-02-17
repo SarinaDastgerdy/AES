@@ -6,7 +6,7 @@ This project implements AES encryption and decryption in C++ using OpenSSL libra
 
 - Supports three encryption modes: ECB (Electronic Codebook), CBC (Cipher Block Chaining), and GCM (Galois/Counter Mode).
 - Implements PKCS#7 padding for ensuring proper block alignment.
-- Allows additional authentication data (AAD) input for GCM mode.
+- Requires additional authentication data (AAD) input for GCM mode.
 - Provides command-line interface for easy encryption and decryption of files.
 
 ### Usage
@@ -18,6 +18,13 @@ To encrypt or decrypt a file using this project, use the following command forma
 - `<mode>`: Encryption mode (`ecb`, `cbc`, or `gcm`).
 - `in=<input_file>`: Input file to be encrypted or decrypted.
 - `out=<output_file>`: Output file to store the encrypted or decrypted result.
+
+### File Formats
+
+- **Encryption Input**: The input file for encryption should contain the text in ASCII format.
+- **Decryption Input**: The input file for decryption should contain the ciphertext in hexadecimal format.
+- **Encryption Output**: The output of encryption will be in both ASCII and hexadecimal formats.
+- **Decryption Output**: The output of decryption will be the plaintext in ASCII format.
 
 ### Resources
 
