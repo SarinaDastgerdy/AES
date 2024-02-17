@@ -22,8 +22,9 @@ To encrypt or decrypt a file using this project, use the following command forma
 ### Compilation and Usage
 
 To compile the code, use the following command:  
-'''bash
-g++ -o out aes_encryption.cpp -lssl -lcrypto  
+```bash
+g++ -o out aes_encryption.cpp -lssl -lcrypto
+```
 Once the code has been compiled, you can run the executable with the following command:  
 ```bash
 ./out key.txt iv.txt aad.txt ecb input.txt output.txt
