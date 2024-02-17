@@ -1,2 +1,25 @@
-# AES
-test
+## AES Encryption and Decryption with OpenSSL
+
+This project implements AES encryption and decryption in C++ using OpenSSL libraries. AES (Advanced Encryption Standard) is a widely-used symmetric encryption algorithm for securing sensitive data.
+
+### Features
+
+- Supports three encryption modes: ECB (Electronic Codebook), CBC (Cipher Block Chaining), and GCM (Galois/Counter Mode).
+- Implements PKCS#7 padding for ensuring proper block alignment.
+- Allows additional authentication data (AAD) input for GCM mode.
+- Provides command-line interface for easy encryption and decryption of files.
+
+### Usage
+
+To encrypt or decrypt a file using this project, use the following command format:
+- `<key_file>`: A file containing a 128-bit key as a hexadecimal string.
+- `<iv_file>`: A file containing the initialization vector (IV) as a hexadecimal string.
+- `<AAD_file>`: (For GCM mode only) A file containing additional authentication data.
+- `<mode>`: Encryption mode (`ecb`, `cbc`, or `gcm`).
+- `in=<input_file>`: Input file to be encrypted or decrypted.
+- `out=<output_file>`: Output file to store the encrypted or decrypted result.
+
+### Resources
+
+- [OpenSSL Documentation](https://wiki.openssl.org/index.php/EVP_Symmetric_Encryption_and_Decryption#Padding): Learn more about EVP Symmetric Encryption and Decryption with OpenSSL.
+
